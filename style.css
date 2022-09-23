@@ -16,19 +16,75 @@
 }
 
 body {
+    position: relative;
     font-family: "Manrope", sans-serif;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--dark-blue);
+}
+
+.content {
+    position: relative;
+    background-color: var(--dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    max-width: 28rem;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+
+.advice-no {
+    color: var(--neon-green);
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.advice {
+    color: var(--light-cyan);
+    margin-bottom: 2rem;
+}
+
+.pause {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.refetch-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--neon-green);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0%;
+    transform: translateY(50%);
+}
+
+.refetch-btn:hover,
+.refetch-btn:focus {
+    transition: box-shadow 100ms ease-out;
+    box-shadow: 0 0 16px 2px var(--neon-green);
+    outline: none;
 }
 
 /* Attribution */
 
 .attribution {
-    font-size: 11px;
+    position: absolute;
     text-align: center;
+    bottom: 1rem;
+    color: var(--light-cyan);
+    font-size: 0.8rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);

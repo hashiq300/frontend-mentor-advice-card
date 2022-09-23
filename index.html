@@ -17,6 +17,7 @@
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
             rel="stylesheet"
         />
+        <script defer src="src.js"></script>
 
         <title>Frontend Mentor | Advice generator app</title>
 
@@ -25,22 +26,28 @@
     <body>
         <div class="content">
             <span class="advice-no">ADVICE #117</span>
-            <h2 class="advice">
-                "It is easy to sit up and take notice, what's difficult is
-                getting up and taking action."
-            </h2>
+            <div class="advice-content">
+                <img class="loading" src="./images/oval.svg" alt="loading..." />
+                <h2 class="advice"></h2>
+            </div>
+
+            <img
+                class="pause"
+                src="./images/pattern-divider-desktop.svg"
+                alt="pause"
+            />
+            <button class="refetch-btn">
+                <img src="./images/icon-dice.svg" alt="refetch advice" />
+            </button>
         </div>
-        <hr class="quote" />
-        <button class="refetch-btn">
-            <img src="./images/icon-dice.svg" alt="refetch advice" />
-        </button>
-        <!-- <div class="attribution">
+
+        <div class="attribution">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Mohammed Hashique A</a>.
-        </div> -->
+        </div>
     </body>
 </html>
