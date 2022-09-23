@@ -37,6 +37,7 @@ body {
     padding: 2rem;
     border-radius: 1rem;
     margin: 0 1rem;
+    box-shadow: 0 10px 16px 1px rgba(0, 0, 0, 0.178);
 }
 
 .advice-no {
@@ -70,9 +71,8 @@ body {
     transform: translateY(50%);
 }
 
-.refetch-btn:hover,
-.refetch-btn:focus {
-    transition: box-shadow 100ms ease-out;
+.refetch-btn:hover {
+    transition: box-shadow 100ms ease;
     box-shadow: 0 0 16px 2px var(--neon-green);
     outline: none;
 }
